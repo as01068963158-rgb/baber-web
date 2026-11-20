@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <title>BARBER PRO | صالون الحلاقة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">BARBER<span>PRO</span>.</a>
+
+            <nav class="nav" id="nav">
+                <a href="#home">الرئيسية</a>
+                <a href="#about">من نحن</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#gallery">معرض الصور</a>
+                <a href="#contact">تواصل معنا</a>
+            </nav>
+
+            <a href="#booking" class="nav-btn">احجز الآن</a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+            <span class="small-title">أهلاً بك في BARBER PRO</span>
+
+            <h1>
+                خليك دايماً<br>
+                <span>في أفضل شكل</span>
+            </h1>
+
+            <p>
+                الأناقة تبدأ من هنا. احصل على أفضل خدمات الحلاقة
+                والعناية الشخصية على أيدي محترفين.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#booking" class="main-btn">احجز موعدك</a>
+                <a href="#services" class="outline-btn">اكتشف خدماتنا</a>
+            </div>
+
+            <div class="clock-box">
+                <span>الوقت الآن</span>
+                <strong id="clock">00:00:00</strong>
+                <small id="todayDate"></small>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80" alt="صالون حلاقة">
+            </div>
+
+            <div class="about-content">
+                <span class="section-subtitle">من نحن</span>
+                <h2>أكثر من مجرد <span>حلاقة</span></h2>
+
+                <p>
+                    في BARBER PRO نهتم بأدق التفاصيل لنقدم لك تجربة
+                    مختلفة تجمع بين الاحترافية والأناقة والراحة.
+                </p>
+
+                <p>
+                    فريقنا متخصص في أحدث قصات الشعر والعناية باللحية
+                    باستخدام أفضل الأدوات والمنتجات.
+                </p>
+
+                <a href="#booking" class="main-btn">احجز تجربتك</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-subtitle">ماذا نقدم؟</span>
+                <h2>خدماتنا <span>وأسعارنا</span></h2>
+                <p>اختار الخدمة المناسبة ليك</p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>قص الشعر</h3>
+                    <p>أحدث القصات بأعلى مستوى من الاحترافية.</p>
+                    <div class="price">150 <small>جنيه</small></div>
+                    <button class="service-btn" data-service="قص الشعر">احجز الخدمة</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🪒</div>
+                    <h3>تهذيب اللحية</h3>
+                    <p>تحديد وتهذيب اللحية بشكل أنيق ومميز.</p>
+                    <div class="price">80 <small>جنيه</small></div>
+                    <button class="service-btn" data-service="تهذيب اللحية">احجز الخدمة</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>تنظيف البشرة</h3>
+                    <p>عناية بالبشرة وتنظيف للحصول على مظهر صحي.</p>
+                    <div class="price">200 <small>جنيه</small></div>
+                    <button class="service-btn" data-service="تنظيف البشرة">احجز الخدمة</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-subtitle">أعمالنا</span>
+                <h2>معرض <span>الصور</span></h2>
+                <p>لمحات من أجواء BARBER PRO</p>
+            </div>
+
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=80" alt="قصة شعر">
+                <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=700&q=80" alt="حلاقة">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=700&q=80" alt="صالون">
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section booking" id="booking">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-subtitle">احجز الآن</span>
+                <h2>احجز <span>موعدك</span></h2>
+                <p>املأ البيانات وسنتواصل معك لتأكيد الحجز</p>
+            </div>
+
+            <form id="bookingForm" class="booking-form">
+
+                <div class="form-group">
+                    <label for="customerName">الاسم بالكامل</label>
+                    <input type="text" id="customerName" placeholder="اكتب اسمك" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerPhone">رقم الهاتف</label>
+                    <input type="tel" id="customerPhone" placeholder="01xxxxxxxxx" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">اختر الخدمة</label>
+                    <select id="service" required>
+                        <option value="">اختر الخدمة</option>
+                        <option value="قص الشعر">قص الشعر - 150 جنيه</option>
+                        <option value="تهذيب اللحية">تهذيب اللحية - 80 جنيه</option>
+                        <option value="تنظيف البشرة">تنظيف البشرة - 200 جنيه</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingDate">تاريخ الحجز</label>
+                    <input type="date" id="bookingDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingTime">وقت الحجز</label>
+                    <input type="time" id="bookingTime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">ملاحظات إضافية</label>
+                    <textarea id="notes" placeholder="أي تفاصيل إضافية..."></textarea>
+                </div>
+
+                <button type="submit" class="main-btn submit-btn">
+                    تأكيد طلب الحجز عبر واتساب
+                </button>
+
+                <p class="form-note">سيتم فتح واتساب لإرسال تفاصيل طلبك.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <a href="#home" class="logo">BARBER<span>PRO</span>.</a>
+
+            <p>الأناقة تبدأ من هنا.</p>
+
+            <div class="footer-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#booking">الحجز</a>
+            </div>
+
+            <p class="copyright">
+                جميع الحقوق محفوظة © 2026 BARBER PRO
+            </p>
+        </div>
+    </footer>
+
+    <a href="#" id="whatsappFloat" class="whatsapp-float" aria-label="واتساب">
+        WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
